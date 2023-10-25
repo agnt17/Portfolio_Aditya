@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    @media (max-width: 1079px) {
+        .navbar {
+            flex-direction: column;
+        }
+
+        .hero-section {
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .skill-faded-text {
+            width: 0px;
+        }
+    }
+
+    @media(max-width : 500px) {
+        .nav-items {
+            flex-direction: column;
+        }
+    }
+
+    @media(max-width : 700px) {
+        .icon-wrapper {
+            flex-direction: column;
+        }
+
+        .blob-style {
+            width: 30vw;
+        }
+    }
+
+    @media(max-width : 400px) {
+        .link-wrapper {
+            flex-direction: column;
+        }
+
+        .footer-faded-text {
+            font-size: 2rem;
+        }
+
+        .blob-style {
+            width: 0;
+        }
+    }
+
+    @media(max-width : 300px) {
+        .skill-logo {
+            width: 0px;
+        }
+    }
+</style>
+
+<body>
+    <div id="wrapper">
+        <div class="container">
+            <!-- navbar section under container section  -->
+            <div class="navbar">
+                <div class="logo-container">
+                    <!-- <img src="./images/userAsset/R.png" class="logo">
+                     -->
+                    <div class="logo-text-A">A</div>
+                    <div class="logo-text">ditya Gupta</div>
+                </div>
+                <div class="nav-items">
+                    <div><a href="#projects" class="agent1">Projects</a> </div>
+                    <div><a href="#skills" class="agent1">Skills</a></div>
+                    <div><a href="#contactme" class="agent1">Contact Me</a></div>
+                    <button id="dark-mode-toggle" class="btn-pink">Toggle Dark Mode</button>
+
+                </div>
+            </div>
+            <!-- hero-section section under containersection -->
+            <div class="hero-section">
+                <div class="absolute faded-text">Aditya Gupta</div>
+                <div class="hero-section-left">
+                    <div class="hero-section-heading">Hi! Folks</div>
+                    <div class="hero-section-heading hero-section-sub-heading">
+                        I am a <span class="role"></span>
+                    </div>
+                    <div class="hero-section-description">I'm Aditya Gupta and here is my portfolio website.
+                        Here
+                        you'll learn about me, my Projects and my Skills.
+                    </div>
+                    <!-- <div class="btn-pink" id="button1" a>My Resume</div> -->
+                    <button class="btn-pink" id="resume-button">My Resume</button>
+
+                </div>
+                <div class="hero-section-right">
+                    <div class="absolute icons icon-dots">
+                        <img src="./Images/userAsset/dots.png" alt="">
+                    </div>
+                    <div class="absolute icons icon-cube">
+                        <img src="./Images/userAsset/cube.png" alt="">
+                    </div>
+                    <div class="absolute icons icon-circle">
+                        <img src="./Images/userAsset/circle.png" alt="">
+                    </div>
+                    <div class="absolute icons icon-zigzak">
+                        <img src="./Images/userAsset/zigzags.png" alt="">
+                    </div>
+                    <div class="absolute icons icon-plus">
+                        <img src="./Images/userAsset/plus.png" alt="">
+                    </div>
+                    <div class="user-image">
+                        <img src="./Images/userAsset/UserImage.jpg" alt="" width="250vw">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- project section -->
+        <div class="project-section" id="projects">
+            <h2 class="page-header">Projects</h2>
+            <div class="project-container">
+                <div class="project-card" id="project1">
+                    <div class="project-number project-number-right">01</div>
+                    <div class="project-content project-content-left ">
+                        <div class="project-skills-container">
+                            <img class="project-skill" src="./Images/stack/HTML.png">
+                            <img class="project-skill" src="./Images/stack/CSS.png">
+                            <img class="project-skill" src="./Images/stack/Javascript.svg">
+                            <img class="project-skill" src="./Images/stack/Tailwind.png">
+                            <img class="project-skill" src="./Images/stack/NodeJs.svg">
+                            <img class="project-skill" src="./Images/stack/Vercel.svg">
+                        </div>
+                        <h2 class="project-heading">Password Generator</h2>
+                        <div class="project-subHeading">It is a project that generates Random Passwords containing mix
+                            of Uppercase, lowercase and numbers...</div>
+                        <div class="btn-grp">
+                            <button class="btn-pink btnProject"><a href="https://password-generator-agnt17.vercel.app/"
+                                    target="_blank" style="color: white;">Try</a></button>
+                            <a href="https://github.com/agnt17/Password_Generator" target="blank">
+                                <i title="GitHubLink" class="fa-brands fa-github icon"></i>
+                            </a>
+                            <a href="https://password-generator-agnt17.vercel.app/" target="_blank"
+                                style="color: white;">
+                                <i title="Live Link" class="fa-solid fa-link icon"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" id="project2">
+                    <div class="project-number project-number-left">02</div>
+                    <div class="project-content">
+                        <div class="project-skills-container">
+                            <img class="project-skill" src="./Images/stack/HTML.png">
+                            <img class="project-skill" src="./Images/stack/CSS.png">
+                            <img class="project-skill" src="./Images/stack/Javascript.svg">
+                            <img class="project-skill" src="./Images/stack/Tailwind.png">
+                            <img class="project-skill" src="./Images/stack/Vercel.svg">
+                        </div>
+                        <h2 class="project-heading">Razor-Pay Clone</h2>
+                        <div class="project-subHeading">This project is a clone of RazorPay Website built from scratch
+                            using HTML, CSS tailwind and JAVASCRIPT</div>
+                        <div class="btn-grp">
+                            <button class="btn-pink btnProject">
+                                <a href="https://razorpay-builtby-agent17.netlify.app/"
+                                    target="_blank" style="color: white;">Try</a>
+                            </button>
+                            <a href="https://github.com/agnt17/RazorPay_clone" target="_blank">
+                                <i title="GitHubLink" class="fa-brands fa-github icon"></i>
+                            </a>
+                            <a href="https://razorpay-builtby-agent17.netlify.app/"
+                                target="blank">
+                                <i title="Live Link" class="fa-solid fa-link icon"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="project-card" id="project3">
+                    <div class="project-number project-number-right">03</div>
+                    <div class="project-content">
+                        <div class="project-skills-container">
+                            <img class="project-skill" src="./Images/stack/HTML.png">
+                            <img class="project-skill" src="./Images/stack/CSS.png">
+                            <img class="project-skill" src="./Images/stack/Javascript.svg">
+
+                            <img class="project-skill" src="./Images/stack/Vercel.svg">
+                        </div>
+                        <h2 class="project-heading">AI CHATBOT</h2>
+                        <div class="project-subHeading">This is the project build using pure JS....it is a chatbot which
+                            answers your questions like ChatGpt</div>
+                        <div class="btn-grp">
+                            <button class="btn-pink btnProject">
+                                <a href="https://ai-chatbot-pi.vercel.app/" target="blank" style="color: white;">
+                                    Try
+                                </a>
+                            </button>
+                            <a href="https://github.com/agnt17/AI_chatbot" target="_blank">
+                                <i title="GitHubLink" class="fa-brands fa-github icon"></i>
+                            </a>
+                            <a href="https://ai-chatbot-pi.vercel.app/" target="blank" style="color: white;">
+                                <i title="Live Link" class="fa-solid fa-link icon"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div> -->
+                <!-- here you can add furthur projects when u make them... -->
+
+                <!-- <div class="project-card" id="project4">
+                    <div class="project-number project-number-left">04</div>
+                    <div class="project-content">
+                        <div class="project-skills-container">
+                            <img class="project-skill" src="./Images/stack/NextJsCircle.png">
+                            <img class="project-skill" src="./Images/stack/Tailwind.png">
+                            <img class="project-skill" src="./Images/stack/Vercel.svg">
+                        </div>
+                        <h2 class="project-heading">Granit</h2>
+                        <div class="project-subHeading">A architectural website to plan your building or home(Hebrew
+                            Language)</div>
+                        <div class="btn-grp">
+                            <button class="btn-pink btnProject">Read More</button>
+                            <a href="">
+                                <i title="GitHubLink" class="fa-brands fa-github icon"></i>
+                            </a>
+                            <a href="">
+                                <i title="Live Link" class="fa-solid fa-link icon"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div> -->
+
+            </div>
+        </div>
+        <!-- skills section -->
+        <div id="skills" class="skills-container">
+            <!-- <h2 class="page-header">Skills</h2> -->
+            <div class="skill-faded-text">Skills</div>
+            <div class="skill-container-left">
+                <h2 class="skill-heading">
+                    <span class="caps">M</span>e and <br>
+                    MyTech stack
+                </h2>
+                <br>
+                <div class="skill-subheading">
+                    <p>Hello everyone, my name is Aditya Gupta, and I'm currently in my third year of college. I'm a
+                        passionate and aspiring web developer, and I've been immersed in the world of web development
+                        since my first year. Over the years, I've acquired a deep and comprehensive understanding of
+                        various web technologies and programming languages.
+                        Currently, I'm actively working on new web development projects, exploring the latest trends and
+                        technologies in the field. I'm also on the lookout for internship opportunities to further
+                        enhance my practical skills and gain real-world experience in web development.</p>
+                    <br>
+                    <p>I possess a strong command of Data Structures and Algorithms, enabling me to efficiently solve
+                        complex problems. My proficiency in Competitive Programming using C++ showcases my ability to
+                        think critically and excel in algorithmic challenges, making me a well-rounded developer with
+                        problem-solving skills.</p>
+                    <br>
+                    <p></p>
+                </div>
+            </div>
+            <div class="skill-container-right">
+                <img src="./Images/userAsset/blob vector.png" class="blob-style" alt="">
+                <img src="./Images/stack/HTML.png" class="skill-logo" />
+                <img src="./Images/stack/CSS.png" class="skill-logo" />
+                <img src="./Images/stack/Javascript.svg" class="skill-logo" />
+                <img src="./Images/stack/React.png" class="skill-logo" />
+                <img src="./Images/stack/NodeJs.svg" class="skill-logo" />
+                <img src="./Images/stack/Next.svg" class="skill-logo" />
+                <img src="./Images/stack/Redux.svg" class="skill-logo" />
+                <img src="./Images/stack/Tailwind.png" class="skill-logo" />
+                <img src="./Images/stack/Bootstrap.svg" class="skill-logo" />
+                <img src="./Images/stack/MaterialUI.svg" class="skill-logo" />
+                <img src="./Images/stack/Express.png" class="skill-logo" />
+                <img src="./Images/stack/Git.svg" class="skill-logo" />
+                <img src="./Images/stack/Github.svg" class="skill-logo" />
+                <img src="./Images/stack/Graphql.svg" class="skill-logo" />
+                <img src="./Images/stack/MongoDB.svg" class="skill-logo" />
+                <img src="./Images/stack/Vercel.svg" class="skill-logo" />
+                <img src="./Images/stack/ChartJs.svg" class="skill-logo" />
+                <img src="./Images/stack/Bash.svg" class="skill-logo" />
+                <img src="./Images/stack/Docker.svg" class="skill-logo" />
+                <img src="./Images/stack/K8s.svg" class="skill-logo" />
+            </div>
+        </div>
+        <!-- contact me section -->
+        <div id="contactme" class="contactus-form-container-main">
+            <div class="container-contactus">
+
+                <h1 class="contactus-heading">Contact me</h1>
+                <br>
+
+                <h3 class="contactus-sub-heading">
+                    Questions, thoughts, or just want to say hello?
+                </h3>
+
+                <br>
+                <div class="contactus-form-container">
+                    <div>
+                        <h3>Email: <a href="mailto:adityagupta20042003@gmail.com">adityagupta20042003@gmail.com</a></h3>
+                    </div>
+                </div>
+
+                <div class="contactus-form-container2">
+                    <div>
+                        <h3>Contact No: <a href="tel:+916306842151">+91 6306842151</a></h3>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+        <!-- footer section -->
+        <footer>
+            <div class="footer-container">
+                <div class="footer-wrapper">
+                    <div class="footer-faded-text">
+                        Aditya Gupta
+                    </div>
+                    <div class="link-wrapper">
+                        <div>
+                            <a href="#skills">Skills</a>
+                        </div>
+                        <div>
+                            <a href="#projects">Projects</a>
+                        </div>
+                        <div>
+                            <a href="#contactme">Contactme</a>
+                        </div>
+                    </div>
+                    <div class="icon-wrapper">
+                        <a href="https://www.linkedin.com/in/aditya-gupta-452790229/" target="_blank">
+                            <i class="fa-brands fa-linkedin icon"></i>
+                        </a>
+                        <a href="https://github.com/agnt17" target="_blank">
+                            <i class="fa-brands fa-github icon">
+                            </i>
+                        </a>
+                        <a href="https://twitter.com/aditya20042003" target="_blank">
+                            <i class="fa-brands fa-twitter icon"></i>
+                        </a>
+                        <a href="https://www.instagram.com/adityagupta1859/" target="_blank">
+                            <i class="fa-brands fa-instagram icon"></i>
+                        </a>
+                        <a href="https://leetcode.com/adi_20042003/" target="_blank">
+                            <img src="../public/Images/userAsset/leetcode.svg" alt="" width="30px">
+                        </a>
+                        <a href="https://auth.geeksforgeeks.org/user/adityagupt0qd9" target="_blank">
+                            <img src="../public/Images/userAsset/gfg.png" alt="" width="30px" style="margin-top: 10px;">
+                        </a>
+                        <a href="https://codeforces.com/profile/agent17" target="_blank">
+                            <img src="../public/Images/userAsset/Codeforces.png" alt="" width="30px">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://kit.fontawesome.com/58a810656e.js" crossorigin="anonymous"></script>
+    <script>
+        var typeData = new Typed(".role", {
+            strings: [
+                "Aditya Gupta",
+                "Competitive Programmer",
+                "Frontend Developer",
+                // "UI-UX Designer",
+                "Backend Developer",
+                "Coder",
+            ],
+            loop: true,
+            typeSpeed: 100,
+            backSpeed: 80,
+            backDelay: 1000,
+        });
+        const darkModeToggle = document.getElementById('dark-mode-toggle');
+        darkModeToggle.addEventListener('click', () => {
+            document.body.classList.toggle('dark-mode');
+        });
+        document.getElementById('resume-button').addEventListener('click', function () {
+            var driveLink = 'https://drive.google.com/drive/folders/16kVS3X-ZE5dTbk9UAe9-IcougRx5cR7g';
+
+            // Open the link in a new tab.
+            window.open(driveLink, '_blank');
+        });
+
+    </script>
+</body>
+
+</html>
