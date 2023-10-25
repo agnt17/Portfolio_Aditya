@@ -432,15 +432,18 @@ a {
 
 .project-card:hover .project-number {
     display: block;
-
-
 }
 
 .project-number-right {
     right: -40px;
     top: -45px;
 }
-
+.achievements{
+    width: 20vw;
+    display: flex;
+    /* justify-content: center; */
+    justify-content: space-around;
+}
 .project-number-left {
     right: -40px;
     top: -45px;
