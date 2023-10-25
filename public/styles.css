@@ -422,7 +422,7 @@ a {
 
 .project-number {
     position: absolute;
-    font-size: 200px;
+    font-size: 10vw;
     font-weight: 600;
     color: rgb(255, 255, 255);
     z-index: 10;
