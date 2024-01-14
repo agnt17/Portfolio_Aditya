@@ -124,8 +124,32 @@
         <div class="project-section" id="projects">
             <h2 class="page-header">Projects</h2>
             <div class="project-container">
-                <div class="project-card" id="project1">
+                <div class="project-card" id="project3">
                     <div class="project-number project-number-right">01</div>
+                    <div class="project-content">
+                        <div class="project-skills-container">
+                            <img class="project-skill" src="./Images/stack/HTML.png">
+                            <img class="project-skill" src="./Images/stack/CSS.png">
+                            <img class="project-skill" src="./Images/stack/Javascript.svg">
+                            <img class="project-skill" src="./Images/stack/openai-logomark.svg">
+                            <img class="project-skill" src="./Images/stack/Vercel.svg">
+                        </div>
+                        <h2 class="project-heading">PIXEL ENGINE</h2>
+                        <div class="project-subHeading">This is the project build using pure HTML, CSS and JS... This project generates Images on the basis of text provided.</div>
+                        <div class="btn-grp">
+                            <button class="btn-pink btnProject">
+                                <a href="https://pixel-engine-generator.vercel.app/" target="blank" style="color: white;">
+                                    Try
+                                </a>
+                            </button>
+                            <a href="https://pixel-engine-generator.vercel.app/" target="blank">
+                                <i title="Live Link" class="fa-solid fa-link icon"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" id="project1">
+                    <div class="project-number project-number-right">02</div>
                     <div class="project-content project-content-left ">
                         <div class="project-skills-container">
                             <img class="project-skill" src="./Images/stack/HTML.png">
@@ -144,15 +168,14 @@
                             <a href="https://github.com/agnt17/Password_Generator" target="blank">
                                 <i title="GitHubLink" class="fa-brands fa-github icon"></i>
                             </a>
-                            <a href="https://password-generator-agnt17.vercel.app/" target="_blank"
-                                style="color: white;">
-                                <i title="Live Link" class="fa-solid fa-link icon"></i>
+                            <a href="https://password-generator-agnt17.vercel.app/" target="_blank">
+                                <i title="Live Link" class="fa-solid fa-link icon"></i>                            
                             </a>
                         </div>
                     </div>
                 </div>
                 <div class="project-card" id="project2">
-                    <div class="project-number project-number-left">02</div>
+                    <div class="project-number project-number-left">03</div>
                     <div class="project-content">
                         <div class="project-skills-container">
                             <img class="project-skill" src="./Images/stack/HTML.png">
@@ -178,34 +201,6 @@
                         </div>
                     </div>
                 </div>
-                <!-- <div class="project-card" id="project3">
-                    <div class="project-number project-number-right">03</div>
-                    <div class="project-content">
-                        <div class="project-skills-container">
-                            <img class="project-skill" src="./Images/stack/HTML.png">
-                            <img class="project-skill" src="./Images/stack/CSS.png">
-                            <img class="project-skill" src="./Images/stack/Javascript.svg">
-
-                            <img class="project-skill" src="./Images/stack/Vercel.svg">
-                        </div>
-                        <h2 class="project-heading">AI CHATBOT</h2>
-                        <div class="project-subHeading">This is the project build using pure JS....it is a chatbot which
-                            answers your questions like ChatGpt</div>
-                        <div class="btn-grp">
-                            <button class="btn-pink btnProject">
-                                <a href="https://ai-chatbot-pi.vercel.app/" target="blank" style="color: white;">
-                                    Try
-                                </a>
-                            </button>
-                            <a href="https://github.com/agnt17/AI_chatbot" target="_blank">
-                                <i title="GitHubLink" class="fa-brands fa-github icon"></i>
-                            </a>
-                            <a href="https://ai-chatbot-pi.vercel.app/" target="blank" style="color: white;">
-                                <i title="Live Link" class="fa-solid fa-link icon"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div> -->
                 <!-- here you can add furthur projects when u make them... -->
 
                 <!-- <div class="project-card" id="project4">
@@ -286,13 +281,13 @@
                 <img src="./Images/stack/Express.png" class="skill-logo" />
                 <img src="./Images/stack/Git.svg" class="skill-logo" />
                 <img src="./Images/stack/Github.svg" class="skill-logo" />
+                <img src="./Images/stack/openai-logomark.svg" class="skill-logo" />
                 <img src="./Images/stack/Graphql.svg" class="skill-logo" />
                 <img src="./Images/stack/MongoDB.svg" class="skill-logo" />
                 <img src="./Images/stack/Vercel.svg" class="skill-logo" />
                 <img src="./Images/stack/ChartJs.svg" class="skill-logo" />
                 <img src="./Images/stack/Bash.svg" class="skill-logo" />
                 <img src="./Images/stack/Docker.svg" class="skill-logo" />
-                <img src="./Images/stack/K8s.svg" class="skill-logo" />
             </div>
         </div>
         <!-- contact me section -->
@@ -367,9 +362,7 @@
             strings: [
                 "Aditya Gupta",
                 "Competitive Programmer",
-                "Frontend Developer",
-                // "UI-UX Designer",
-                "Backend Developer",
+                "MERN Stack Developer",
                 "Coder",
             ],
             loop: true,
@@ -383,11 +376,9 @@
         });
         document.getElementById('resume-button').addEventListener('click', function () {
             var driveLink = 'https://drive.google.com/drive/folders/16kVS3X-ZE5dTbk9UAe9-IcougRx5cR7g';
-
             // Open the link in a new tab.
             window.open(driveLink, '_blank');
         });
-
     </script>
 </body>
 
